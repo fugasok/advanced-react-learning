@@ -22,7 +22,7 @@ const UseStateArray = () => {
       <ul>
         {people.map((person) => {
           const { id, name } = person;
-          // console.log(person);
+
           return (
             <li key={id}>
               <h4>{name}</h4>
