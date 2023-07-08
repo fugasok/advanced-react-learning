@@ -15,7 +15,9 @@ const CleanupFunction = () => {
 
 const NewComponent = () => {
 	useEffect(() => {
-		console.log("RANDOM");
+		const someFunc = () => {};
+		window.addEventListener("scroll", someFunc);
+    return ()=> window.removeEventListener('scroll', someFunc)
 	}, []);
 
 	return <h4 className="alert alert-danger">Toggled</h4>;
