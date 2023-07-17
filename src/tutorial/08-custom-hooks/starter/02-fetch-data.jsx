@@ -1,10 +1,10 @@
-import useFetchUser from "./useFetchUser";
+import useFetch from "./useFetch";
 
 const url = "https://api.github.com/users/QuincyLarson";
 
 const FetchData = () => {
 	//Challenge
-	const { isLoading, isError, user } = useFetchUser(url);
+	const { isLoading, isError, data:user } = useFetch(url);
 
 	if (isLoading) {
 		return <h2>Loading...</h2>;
