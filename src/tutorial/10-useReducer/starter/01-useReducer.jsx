@@ -7,7 +7,6 @@ const defaultState = {
 	people: data,
 };
 
-
 const ReducerBasics = () => {
 	const [state, dispatch] = useReducer(reducer, defaultState);
 
